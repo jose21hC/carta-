@@ -1,0 +1,132 @@
+/* 🎨 Estilo general */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 📌 Contenedor */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* ✉️ Sobre */
+.sobre {
+    position: relative;
+    width: 320px;
+    height: 220px;
+    background: #d84315;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* 📩 Tapa del sobre */
+.tapa {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    background: #ff7043;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transform-origin: top;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* 📜 Carta */
+.carta {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background: #fff8e1;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    transform: translateY(100%);
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    opacity: 0;
+}
+
+/* 🌟 Frase */
+#frase {
+    color: #151313;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* 🎀 Botón */
+.boton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(45deg, #ff3d00, #ff6f00);
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.boton:hover {
+    transform: scale(1.1);
+}
+
+/* 🌺 Flor */
+.flor {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Pétalos */
+.petalo {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    background: radial-gradient(circle, #ff4081 50%, transparent 60%);
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+/* Distribución de pétalos */
+.petalo1 { top: 10px; left: 35px; transform: rotate(0deg); }
+.petalo2 { top: 10px; left: 35px; transform: rotate(45deg); }
+.petalo3 { top: 10px; left: 35px; transform: rotate(90deg); }
+.petalo4 { top: 10px; left: 35px; transform: rotate(135deg); }
+.petalo5 { top: 10px; left: 35px; transform: rotate(180deg); }
+.petalo6 { top: 10px; left: 35px; transform: rotate(225deg); }
+.petalo7 { top: 10px; left: 35px; transform: rotate(270deg); }
+.petalo8 { top: 10px; left: 35px; transform: rotate(315deg); }
+
+/* Centro de la flor */
+.centro {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #ffd700;
+    border-radius: 50%;
+    top: 40px;
+    left: 40px;
+}
